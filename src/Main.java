@@ -10,12 +10,13 @@ public class Main {
     } else {
         System.out.println("Если возраст человека равен " + age +", то он совершеннолетний");
     }
-        //task1
-        int age = 48;
-        if (age < 18) {
-            System.out.println("Если возраст человека равен " + age +", то он не достиг совершеннолетия, нужно немного подождать");
-        } else {
-            System.out.println("Если возраст человека равен " + age +", то он совершеннолетний");
+    //task1
+    float teperature = 4;
+    if (teperature < 5) {
+        System.out.println("На улице холодно, нужно надеть шапку");
+    } else { if (teperature > 5)
+        {System.out.println("Сегодня тепло, можно идти без шапки");
         }
+    }
     }
 }
