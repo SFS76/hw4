@@ -23,6 +23,44 @@ public class Main {
     if (speed > 60) {
         System.out.println("Если скорость " + speed + " км/ч, то придется платить штраф");
     } else { System.out.println("Если скорость " + speed + " км/ч, то можно ездить спокойно");
+
     }
+    //task4
+    float age2 = 30;
+    if (age2 >= 2 && age2 < 7) {
+        System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в детский сад");
+    }
+    if (age2 >= 7 && age2 < 18) {
+        System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
+    }
+    if (age2 >= 18 && age2 < 24) {
+        System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в университет");
+    }
+    if (age2 >= 24) {
+        System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить на работу");
+    }
+    //task5
+    float age3 = 13;
+    if (age3 < 5) {
+        System.out.println("Если возраст ребенка равен " + age3 + ", то ему нельзя кататься на аттракционе");
+    }
+    if (age3 >= 5 && age3 < 14) {
+        System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+    }
+    if (age3 >= 14) {
+        System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+    }
+    //task6
+    int passengers = 55;
+    int allPlase = 102 - passengers;
+    int sitePlase = 60 - passengers;
+    if (passengers < 5) {
+        System.out.println("Если возраст ребенка равен " + passengers + ", то ему нельзя кататься на аттракционе");
+    }
+    if (passengers >= 5 && passengers < 14) {
+        System.out.println("Если возраст ребенка равен " + passengers + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+    }
+    if (passengers >= 14) {
+        System.out.println("Если возраст ребенка равен " + passengers + ", то ему можно кататься на аттракционе без сопровождения взрослого");
     }
 }
