@@ -52,15 +52,14 @@ public class Main {
     }
     //task6
     int passengers = 55;
-    int allPlase = 102 - passengers;
-    int sitePlase = 60 - passengers;
-    if (passengers < 5) {
-        System.out.println("Если возраст ребенка равен " + passengers + ", то ему нельзя кататься на аттракционе");
+    int allPlace = 102 - passengers;
+    int sitePlace = 60 - passengers;
+    if (passengers <= allPlace) {
+        System.out.println("Вагон полностью забит");
     }
-    if (passengers >= 5 && passengers < 14) {
-        System.out.println("Если возраст ребенка равен " + passengers + ", то ему можно кататься на аттракционе в сопровождении взрослого");
-    }
-    if (passengers >= 14) {
-        System.out.println("Если возраст ребенка равен " + passengers + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+    if (passengers < allPlace && passengers >= sitePlace) {
+        System.out.println("В вагоне осталось " + (passengers - sitePlace) + " стоячих мест");
+    } else {
+        System.out.println("В вагоне осталось " + (sitePlace - passengers) + " сидячих мест и 42 стоячих места");
     }
 }
