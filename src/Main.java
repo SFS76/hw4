@@ -14,9 +14,9 @@ public class Main {
     float teperature = 4;
     if (teperature < 5) {
         System.out.println("На улице холодно, нужно надеть шапку");
-    } else { if (teperature > 5)
+    }
+    if (teperature > 5)
         {System.out.println("Сегодня тепло, можно идти без шапки");
-        }
     }
     //task3
     float speed = 60;
@@ -51,15 +51,28 @@ public class Main {
         System.out.println("Если возраст ребенка равен " + age3 + ", то ему можно кататься на аттракционе без сопровождения взрослого");
     }
     //task6
-    int passengers = 55;
-    int allPlace = 102 - passengers;
-    int sitePlace = 60 - passengers;
-    if (passengers <= allPlace) {
+    int passengers = 50;
+    int allPlace = 102;
+    int sitePlace = 60;
+    if (passengers > allPlace) {
         System.out.println("Вагон полностью забит");
-    }
+    } else
     if (passengers < allPlace && passengers >= sitePlace) {
-        System.out.println("В вагоне осталось " + (passengers - sitePlace) + " стоячих мест");
+        System.out.println("В вагоне осталось " + (allPlace - passengers) + " стоячих мест");
     } else {
         System.out.println("В вагоне осталось " + (sitePlace - passengers) + " сидячих мест и 42 стоячих места");
+    }
+    //task7
+    int one = 150;
+    int two = 102;
+    int three = 160;
+    if (one > two && one > three) {
+        System.out.println("Первое число максимальное");
+    } else
+    if (two > one && two > three) {
+        System.out.println("Второе число максимальное");
+    } else {
+        System.out.println("Третье число максимальное");
+    }
     }
 }
